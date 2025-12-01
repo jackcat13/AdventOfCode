@@ -5,7 +5,8 @@ use std::{
 };
 
 pub fn first_part() -> String {
-    let file = File::open("./year2025/exo1/exo1.txt").expect("Please provide valid puzzle input");
+    let file =
+        File::open("./src/year2025/exo1/exo1.txt").expect("Please provide valid puzzle input");
     let reader = BufReader::new(file);
 
     let mut dial_pointer = 50;
@@ -43,7 +44,8 @@ pub fn first_part() -> String {
 }
 
 pub fn second_part() -> String {
-    let file = File::open("./year2025/exo1/exo1.txt").expect("Please provide valid puzzle input");
+    let file =
+        File::open("./src/year2025/exo1/exo1.txt").expect("Please provide valid puzzle input");
     let reader = BufReader::new(file);
 
     let mut dial_pointer = 50;
@@ -74,7 +76,7 @@ pub fn second_part() -> String {
             dial_pointer = 100 + dial_pointer;
             if init_dial_pointer != 0 {
                 password += 1;
-                is_zero = true;
+            is_zero = true;
             }
         } else if dial_pointer > 99 {
             dial_pointer = dial_pointer - 100;
