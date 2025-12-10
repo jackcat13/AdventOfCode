@@ -25,6 +25,8 @@ fn main() -> Result<(), u8> {
             "5-2" => year2025::exo5::second_part(),
             "6-1" => year2025::exo6::first_part(),
             "6-2" => year2025::exo6::second_part(),
+            "7-1" => year2025::exo7::first_part(),
+            "7-2" => year2025::exo7::second_part(),
             _ => return not_found(year, day_and_part),
         },
         _ => return not_found(year, day_and_part),
