@@ -5,3 +5,4 @@ pub mod exo4;
 pub mod exo5;
 pub mod exo6;
 pub mod exo7;
+pub mod exo8;
